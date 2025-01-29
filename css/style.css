@@ -4,6 +4,7 @@
 }
 
 body {
+  width: 1wh;
   overflow-x: hidden;
 }
 
@@ -42,6 +43,7 @@ main > section[class="invoice"] > table thead tr {
 
 main > section[class="invoice"] > table th,
 main > section[class="invoice"] > table td {
+  max-width: 20ch;
   text-align: start;
   padding: 0.5rem 0.25rem;
 }
@@ -55,6 +57,13 @@ main > section[class="invoice"] > table td:nth-child(4) {
 main > section[class="invoice"] > table tbody > tr {
   background-color: rgba(0, 135, 140, 0.1);
   border-block-end: 1px solid var(--color1);
+}
+
+main > section[class="invoice"] > table tbody > tr td > input {
+  min-width: 10ch;
+  width: 100%;
+  outline: none;
+  border: none;
 }
 
 main > section[class="invoice"] > table tbody > tr:nth-child(even) {
